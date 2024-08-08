@@ -77,6 +77,7 @@ func BBoxFromPoints(points []Point) (box Box) {
 type Shape interface {
 	BBox() Box
 
+	Points() []Point
 	read(io.Reader)
 	write(io.Writer)
 }
